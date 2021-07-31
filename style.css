@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', normal;
+}
+
+.konten {
+  max-width: 1220px;
+  margin: 10vh;
+}
+
+/* NOTE: bagian profil influencer */
+.profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.nama-profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.nama-profil span:first-child {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4E5150;
+}
+
+.nama-profil span:last-child {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
+}
+
+.profil-follower {
+  display: flex;
+  flex-direction: row;
+}
+
+.follower {
+  width: 100px;
+  height: 67px;
+  background: #E5E5E5;
+  border-radius: 12px;
+  margin: 10px 12px;
+  padding-top: 4%;
+  text-align: center;
+  color: #4E5150;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.bawah {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #BDBDBD;
+}
+
+.profil img {
+  width: 156px;
+  height: 156px;
+  border-radius: 16px;
+}
+
+/* NOTE: bagian galeri influencer */
+.Galeri {
+  display: grid;
+  height: 100%;
+  grid-auto-rows: auto auto 1fr auto;
+  gap: 10px;
+  grid-template-areas: "foto1 foto2 foto2"
+    "foto3 foto3 foto4"
+    "foto5 foto6 foto4"
+    "footer footer footer";
+}
+
+.Galeri img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.foto1 {
+  grid-area: foto1;
+}
+
+.foto2 {
+  grid-area: foto2;
+}
+
+.foto3 {
+  grid-area: foto3;
+}
+
+.foto4 {
+  grid-area: foto4;
+}
+
+.foto5 {
+  grid-area: foto5;
+    height: 100%;
+
+}
+
+.foto6 {
+  grid-area: foto6;
+    height: 100%;
+
+}
+.footer{
+  grid-area: footer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #B9BDCF;
+}
+@media (max-width:720px) {
+  .konten{
+    margin:0;
+  }
+.footer{
+  margin-top: 20px;
+}
+}
+@media (max-width:375px) {
+
+  .konten{
+    margin:0;
+  }
+  .profil img{
+    width: 101.76px;
+    height: 101.76px;
+  }
+  .nama-profil span:first-child {
+    font-size: 14px;
+  }
+  .nama-profil span:last-child {
+    font-size: 10px;
+  }
+  .follower{
+    width: 78px;
+    height: 52px;
+    font-size: 12px;
+    padding-top: 2%;
+  }
+  .bawah{
+    font-size: 12px;
+  }
+  .Galeri{
+    height: 100%;
+  }
+.profil{
+  margin:10px 0;
+}
+}
